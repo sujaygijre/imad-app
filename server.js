@@ -11,11 +11,11 @@ app.get('/', function (req, res) {
 app.get('/article-one', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
-app.get('/article-two', function (req, res) {
-  res.send('article 2 will be served here');
+app.get('/article-two', function (req, res){ 
+res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
 app.get('/article-third', function (req, res) {
-  res.send('article 3 will be served here');
+  res.sendFile(path.join(__dirname, 'ui', 'article-third.html'));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
