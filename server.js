@@ -36,6 +36,7 @@ var htmltemplate=`
              <link href="/ui/style.css" rel="stylesheet" />
         </head>
         <body>
+        <div class="container">
             <div>
                 <a href="/">HOME</a>
                 </div>
@@ -44,6 +45,7 @@ var htmltemplate=`
                 <div>  ${date}</div>
                 <div>
                    ${content}
+                    </div>
                     </div>
             </body>
             
